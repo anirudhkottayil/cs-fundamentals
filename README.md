@@ -6,3 +6,7 @@
 # Stack
 - Created a stack using 3 files stack.h with the funtion declarations, stack.c with the funtion definitions and main.c to run it.
 - The stack has push, pop and peek functionalities.
+
+# Dynamic Array
+- Created the whole set of dynamic array functionality using 3 files .h .c and main.c to test it.
+- main.c was made using claude after i uploaded the core array functionality

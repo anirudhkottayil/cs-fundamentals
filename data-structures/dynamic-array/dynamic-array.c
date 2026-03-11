@@ -84,7 +84,7 @@ int insert(DynamicArray* arr, int val, size_t index){
   return 0; // 0 means insertion happened without any errors
 }
 
-int remove(DynamicArray* arr, size_t index){
+int remove_at(DynamicArray* arr, size_t index){
   if (arr->size == 0){
     return -1; // Nothing to remove
   }
