@@ -10,3 +10,8 @@
 # Dynamic Array
 - Created the whole set of dynamic array functionality using 3 files .h .c and main.c to test it.
 - main.c was made using claude after i uploaded the core array functionality
+
+# HashMap
+- Created a hashmap with most common functionality (insert, remove, get, contains, print) including resize depending on the load factor.
+- main.c was made using claude to test everything
+- 1 way to improve performance would be to move the nodes to the new array instead of creating new nodes during resize.
