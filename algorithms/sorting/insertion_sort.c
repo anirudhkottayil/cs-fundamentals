@@ -5,13 +5,11 @@ void in_sort(int* arr, int length){
   for (int i = 1; i < length; i++){
     int j = i;
     int temp = arr[j];
-    int flag = 0;
     while ((j > 0) && (temp < arr[j-1])){
       arr[j] = arr[j-1];
-      flag = 1;
       j--;
     }
-    if (flag == 1)arr[j] = temp;
+    arr[j] = temp;
   }
 }
 
