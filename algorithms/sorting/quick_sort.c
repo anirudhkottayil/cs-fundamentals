@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void move(int* arr,int i, int length, int pivot, int pivot_index){
   if (i == pivot_index-1){
@@ -26,6 +27,10 @@ int* q_sort(int* arr, int length){
   if (length == 1) {
     return &arr[0];
   }
+  int rand_num = rand() % length-1;
+  int temp = arr[length-1];
+  arr[length-1] = arr[rand_num];
+  arr[rand_num] = temp;
 
   int low = 0;
   int high = length -1;
@@ -48,6 +53,7 @@ int* q_sort(int* arr, int length){
 }
 
 int main(){
+  srand(time(NULL));
   int arr[] = {10,9,6,3,5,8};
   int length = 6;
   q_sort(arr, length);
