@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "insort.h"
 
 int insertion_point(int* arr, int length, int elem){
   int left = 0;
@@ -30,16 +31,16 @@ void in_sort(int* arr, int length){
 }
 
 
-int main(){
-  int arr[] = {10,9,6,3,5,8};
-  int length = 6;
-
-  in_sort(arr, length);
-
-  for (int i = 0; i < length; i++){
-    printf("%d ", arr[i]);
-  }
-  printf("\n");
-
-  return 0;
-}
+// int main(){
+//   int arr[] = {10,9,6,3,5,8};
+//   int length = 6;
+//
+//   in_sort(arr, length);
+//
+//   for (int i = 0; i < length; i++){
+//     printf("%d ", arr[i]);
+//   }
+//   printf("\n");
+//
+//   return 0;
+// }

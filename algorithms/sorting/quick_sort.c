@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "insort.h"
 
 void move(int* arr,int i, int length, int pivot, int pivot_index){
   if (i == pivot_index-1){
@@ -27,7 +28,13 @@ int* q_sort(int* arr, int length){
   if (length == 1) {
     return &arr[0];
   }
-  int rand_num = rand() % length-1;
+
+  if (length < 17) {
+    in_sort(arr, length);
+    return NULL;
+  }
+
+  int rand_num = rand() % length;
   int temp = arr[length-1];
   arr[length-1] = arr[rand_num];
   arr[rand_num] = temp;
